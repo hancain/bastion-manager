@@ -2,7 +2,7 @@
 const categoryData = {
    title: String,
    addable: Boolean,
-   entries: Array
+   entries: Array.from({length: 6}, (k,v) => v +1)
 }
 </script>
 
@@ -17,7 +17,9 @@ const categoryData = {
         </v-banner>
         <v-infinite-scroll>
          <template v-for="(item, index) in categoryData.entries" :key="item">
-
+            <div>
+               item
+            </div>
          </template>
         </v-infinite-scroll>
      </div>

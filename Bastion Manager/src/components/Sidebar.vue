@@ -1,5 +1,8 @@
 <script>
-const entries = []
+import SidebarEntry from './SidebarEntry.vue';
+
+const entries = [
+]
 </script>
 
 <!-- make list of items to insert via app vue-->
